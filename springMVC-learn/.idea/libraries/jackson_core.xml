@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jackson-core">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-core" />
+      <root url="file://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-core" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind" recursive="false" />
+  </library>
+</component>

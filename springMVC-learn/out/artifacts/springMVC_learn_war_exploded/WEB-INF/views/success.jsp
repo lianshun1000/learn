@@ -9,6 +9,11 @@
 <html>
 <head>
     <h1>Success page</h1>
+    username:${requestScope.username}<%--四个域对象：pageScope   requestScope   sessionScope   applicationScope--%>
+    <br/>
+    password:${requestScope.password}
+    <br/>
+    loginMsg:${requestScope.loginMsg}
 </head>
 <body>
 
