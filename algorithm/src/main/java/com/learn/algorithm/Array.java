@@ -82,6 +82,7 @@ public class Array {
      */
 
     public static List<List<Integer>> threeSumBestPractice(int[] nums) {
+        //断言对象不是null
         Assert.notNull(nums);
 
         List<List<Integer>> result = new ArrayList<>();
@@ -129,5 +130,45 @@ public class Array {
         }
 
         return result;
+    }
+
+    public static List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> results = new ArrayList<>();
+
+        Arrays.sort(nums);
+
+        final int size = nums.length;
+        if (nums == null || nums.length <= 2 || nums[0] > 0 || nums[size - 1] < 0) {
+            return results;
+        }
+
+        for (int i = 0; i < size - 2; i++) {
+            // 1. 找到满足的之后把f,s值相同的都去掉
+            if (i >= 1 && nums[i - 1] == nums[i]) {
+                continue;
+            }
+
+            int baseVal = nums[i];
+            // first-point: i++'s value; second-point: last-index's value
+            int secPr = size - 1;
+            int firPr = i + 1;
+
+            while (secPr > firPr) {
+                // 2. 找到满足的之后把f,s值相同的都去掉: [-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6]
+                if (nums[firPr] + baseVal + nums[secPr] == 0) {
+                    results.add(Arrays.asList(baseVal, nums[firPr], nums[secPr]));
+                    while (firPr < secPr && nums[firPr] == nums[++firPr]) {}
+                    while (firPr < secPr && nums[secPr] == nums[--secPr]) {}
+                }
+                // 3. move point according to baseVal
+                else if (nums[firPr] + nums[secPr] < -baseVal) {
+                    firPr++;
+                } else {
+                    secPr--;
+                }
+            }
+        }
+
+        return results;
     }
 }
