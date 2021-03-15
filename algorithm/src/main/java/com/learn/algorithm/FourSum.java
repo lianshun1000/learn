@@ -10,7 +10,7 @@ public class FourSum {
     }
 
     /**
-     * 给定⼀个数组，要求在这个数组中找出 4 个数之和为 0 的所有组合。
+     * 给定⼀个数组，要求在这个数组中找出 4 个数之和为 target 的所有组合。
      * @param nums
      * @param target
      * @return

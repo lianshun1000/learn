@@ -3,6 +3,7 @@ package com.learn.Java8;
 import org.junit.Test;
 
 import java.util.Comparator;
+import java.util.function.Consumer;
 
 public class LambdaTest {
     @Test
