@@ -21,6 +21,8 @@ import java.util.concurrent.CopyOnWriteArraySet;
  */
 public class NoteSafeDemo {
     public static void main(String[] args) {
+        LinkedList list1 = new LinkedList();
+        list1.remove(1);
        List<String> list  = new CopyOnWriteArrayList<>();//Collections.synchronizedList(new ArrayList<>());//new Vector<>();//new ArrayList<>();
         for (int i = 0; i < 30; i++) {
             new Thread(() -> {

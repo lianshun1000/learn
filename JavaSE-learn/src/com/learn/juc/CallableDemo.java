@@ -3,6 +3,9 @@ package com.learn.juc;
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
+/**
+ * get方法一般放在最后一行
+ */
 public class CallableDemo {
     public static void main(String[] args) throws Exception{
         FutureTask<Integer> futureTask = new FutureTask(new MyThread2());
