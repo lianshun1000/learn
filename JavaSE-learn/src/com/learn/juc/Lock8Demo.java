@@ -1,5 +1,11 @@
 package com.learn.juc;
 
+import com.learn.entities.Person;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -24,9 +30,30 @@ import java.util.concurrent.TimeUnit;
  *  5，6 静态同步方法，锁的是当前类的class对象
  */
 public class Lock8Demo {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, CloneNotSupportedException {
         Phone phone = new Phone();
         Phone phone2 = new Phone();
+
+        HashMap map = new HashMap();
+        map.put(1,2);
+        HashMap map2 = (HashMap) map.clone();
+
+        System.out.println(map == map2);
+        map.put(1,3);
+        System.out.println( map2);
+        System.out.println( map);
+
+        /*Person p1 = new Person(1,"123");
+        Person p2 = (Person) p1.clone();
+
+        System.out.println(p1.getId());
+        System.out.println(p2.getId());
+
+        p1.setId(2);
+        System.out.println(p1.getId());
+        System.out.println(p2.getId());*/
+
+
 
         new Thread(() -> {
             try {
