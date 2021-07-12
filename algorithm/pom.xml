@@ -19,6 +19,12 @@
             <artifactId>hutool-all</artifactId>
             <version>5.2.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>de.schlichtherle.truelicense</groupId>
+            <artifactId>truelicense-core</artifactId>
+            <version>1.33</version>
+        </dependency>
     </dependencies>
 
     <properties>
