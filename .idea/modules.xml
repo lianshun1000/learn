@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/IPersistence_test/IPersistence_test.iml" filepath="$PROJECT_DIR$/IPersistence_test/IPersistence_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE-learn/JavaSE-learn.iml" filepath="$PROJECT_DIR$/JavaSE-learn/JavaSE-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn.iml" filepath="$PROJECT_DIR$/.idea/learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_multitable/mybatis_multitable.iml" filepath="$PROJECT_DIR$/mybatis_multitable/mybatis_multitable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_quickStarter/mybatis_quickStarter.iml" filepath="$PROJECT_DIR$/mybatis_quickStarter/mybatis_quickStarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMVC-learn/springMVC-learn.iml" filepath="$PROJECT_DIR$/springMVC-learn/springMVC-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMVC-learn2/springMVC-learn2.iml" filepath="$PROJECT_DIR$/springMVC-learn2/springMVC-learn2.iml" />
     </modules>
