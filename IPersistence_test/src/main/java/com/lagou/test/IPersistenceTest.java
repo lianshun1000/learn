@@ -50,4 +50,54 @@ public class IPersistenceTest {
 
 
 
+    @Test
+    public void test2() throws Exception{
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setId(1);
+        user.setUsername("练顺");
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);//userDao是一个代理对象
+
+        int rows = userDao.updateUser(user);
+        System.out.println(rows);
+
+    }
+
+
+    @Test
+    public void test3() throws Exception{
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setId(3);
+        user.setUsername("zzz");
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);//userDao是一个代理对象
+
+        int rows = userDao.insertUser(user);
+        System.out.println(rows);
+
+    }
+
+
+    @Test
+    public void test4() throws Exception{
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);//userDao是一个代理对象
+
+        int rows = userDao.deleteUser(3);
+        System.out.println(rows);
+
+    }
+
+
 }

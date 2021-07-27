@@ -11,10 +11,7 @@ import com.lagou.utils.TokenHandler;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +57,6 @@ public class SimpleExecutor implements Executor{
         String resultType = mappedStatement.getResultType();
         Class<?> resultTypeClass = getClassType(resultType);
         ArrayList<Object> objects = new ArrayList<>();
-
         //6.封装返回结果集
         while (resultSet.next()){
             Object o = resultTypeClass.newInstance();
@@ -81,6 +77,45 @@ public class SimpleExecutor implements Executor{
         }
 
         return (List<E>)objects;
+    }
+
+    @Override
+    public int update(Configuration configuration, MappedStatement mappedStatement, Object... params) throws Exception {
+        //1.注册驱动，获取连接
+        Connection connection = configuration.getDataSource().getConnection();
+
+        //2.获取sql语句
+        //转换sql语句，转换的过程中还需要对#{}里面的值进行解析和存储
+        String sql = mappedStatement.getSql();
+        BoundSql boundSql = getBoundSql(sql);
+
+        //3.获取预处理对象preparedStatement
+        PreparedStatement preparedStatement = connection.prepareStatement(boundSql.getSqlText());
+
+        //4.设置参数
+        //获取到了参数的全路径
+        String paramterType = mappedStatement.getParamterType();
+        Class<?> parameterTypeClass =  getClassType(paramterType);
+        List<ParameterMapping> parameterMappingList = boundSql.getParameterMappingList();
+        for (int i = 0; i < parameterMappingList.size(); i++) {
+
+            if(parameterTypeClass.toString().equals("class java.lang.Integer")){
+                preparedStatement.setObject(i + 1, params[0]);
+            }else {
+                ParameterMapping parameterMapping = parameterMappingList.get(i);
+                String content = parameterMapping.getContent();
+                //反射
+                Field declaredField = parameterTypeClass.getDeclaredField(content);
+                declaredField.setAccessible(true);//暴力访问
+                Object o = declaredField.get(params[0]);
+                preparedStatement.setObject(i + 1, o);
+            }
+        }
+
+        //5.执行sql
+         preparedStatement.execute();
+        int rows = preparedStatement.getUpdateCount();
+        return rows;
     }
 
     private Class<?> getClassType(String paramterType) throws ClassNotFoundException {

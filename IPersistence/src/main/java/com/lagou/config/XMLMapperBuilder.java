@@ -30,6 +30,9 @@ public class XMLMapperBuilder {
         String namespace = rootElement.attributeValue("namespace");
 
         List<Element> list = rootElement.selectNodes("//select");
+        list.addAll(rootElement.selectNodes("//update"));
+        list.addAll(rootElement.selectNodes("//delete"));
+        list.addAll(rootElement.selectNodes("//insert"));
         for (Element element : list) {
             String id = element.attributeValue("id");
             String resultType = element.attributeValue("resultType");

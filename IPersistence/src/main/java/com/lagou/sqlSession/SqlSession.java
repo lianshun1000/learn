@@ -17,4 +17,10 @@ public interface SqlSession {
 
     //为Dao接口生成代理实现类
     <T> T getMapper(Class<?> mapperClass);
+
+    int update(String statement, Object... parameter) throws Exception;
+
+    int insert(String statement, Object... parameter) throws Exception;
+
+    int delete(String statement, Object... parameter) throws Exception;
 }

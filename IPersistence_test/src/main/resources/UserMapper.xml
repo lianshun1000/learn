@@ -8,4 +8,16 @@
         select * from user where id = #{id} and username = #{username}
     </select>
 
+    <update id="updateUser" resultType="java.lang.Integer" paramterType="com.lagou.pojo.User">
+        update user set username = #{username} where id = #{id}
+    </update>
+
+    <insert id="insertUser" resultType="java.lang.Integer" paramterType="com.lagou.pojo.User">
+        insert into user values(#{id},#{username})
+    </insert>
+
+    <delete id="deleteUser" resultType="java.lang.Integer" paramterType="java.lang.Integer">
+        delete from user where id = #{id}
+    </delete>
+
 </mapper>

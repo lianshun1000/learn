@@ -58,15 +58,37 @@ public class DefaultSqlSession implements SqlSession {
                 //准备参数2：params：args
                 //获取被调用方法的返回值类型
                 Type genericReturnType = method.getGenericReturnType();
+                System.out.println(genericReturnType.toString());
                 //判断是否进行了 泛型类型参数化
                 if(genericReturnType instanceof ParameterizedType){
                    List<Object> objects = selectList(statementId,args);
                    return objects;
+                }else if (genericReturnType.toString().equals("int")){
+                    int rows = update(statementId,args);
+                    return rows;
                 }
                 return selectOne(statementId,args);
             }
         });
 
         return (T)proxyInstance;
+    }
+
+    @Override
+    public int update(String statement, Object... parameter) throws Exception {
+        SimpleExecutor simpleExecutor = new SimpleExecutor();
+        MappedStatement mappedStatement = configuration.getMappedStatementMap().get(statement);
+        int rows = simpleExecutor.update(configuration, mappedStatement, parameter);
+        return rows;
+    }
+
+    @Override
+    public int insert(String statement, Object... parameter) throws Exception {
+        return update(statement,parameter);
+    }
+
+    @Override
+    public int delete(String statement, Object... parameter) throws Exception {
+        return update(statement,parameter);
     }
 }

@@ -18,4 +18,10 @@ public interface IUserDao {
 
     //根据条件进行用户查询
     User findByCondition(User user) throws Exception;
+
+    int updateUser(User user) throws Exception;
+
+    int insertUser(User user) throws Exception;
+
+    int deleteUser(Integer id) throws Exception;
 }

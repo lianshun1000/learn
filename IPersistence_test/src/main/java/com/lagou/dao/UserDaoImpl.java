@@ -40,4 +40,34 @@ public class UserDaoImpl implements IUserDao{
         System.out.println(user2);
         return user2;
     }
+
+    @Override
+    public int updateUser(User user) throws Exception {
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.update("user.updateUser",user);
+        return rows;
+    }
+
+    @Override
+    public int insertUser(User user) throws Exception {
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.update("user.insertUser",user);
+        return rows;
+    }
+
+    @Override
+    public int deleteUser(Integer id) throws Exception {
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int rows = sqlSession.update("user.deleteUser",id);
+        return rows;
+    }
 }
