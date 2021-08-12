@@ -1,5 +1,5 @@
 <mapper namespace="com.lagou.dao.IUserDao">
-<!--sql 的唯一表识：namespace.id组成：statementId-->
+    <!--sql 的唯一表识：namespace.id组成：statementId-->
     <select id="findAll" resultType="com.lagou.pojo.User">
         select * from user
     </select>

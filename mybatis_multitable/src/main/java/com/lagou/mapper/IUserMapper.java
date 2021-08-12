@@ -16,11 +16,11 @@ import java.util.List;
 public interface IUserMapper {
     //查询所有用户信息及其订单信息
     @Results({
-            @Result(property = "id",column = "id"),
-            @Result(property = "username",column = "username"),
-            @Result(property = "password",column = "password"),
-            @Result(property = "birthday",column = "birthday"),
-            @Result(property = "orderList",column = "id",javaType = List.class,
+            @Result(property = "id", column = "id"),
+            @Result(property = "username", column = "username"),
+            @Result(property = "password", column = "password"),
+            @Result(property = "birthday", column = "birthday"),
+            @Result(property = "orderList", column = "id", javaType = List.class,
                     many = @Many(select = "com.lagou.mapper.IOrderMapper.findOrderByUid")),
     })
     @Select("select * from user")
@@ -29,11 +29,11 @@ public interface IUserMapper {
     //查询所有用户以及其所有角色信息
     @Select("select * from user")
     @Results({
-            @Result(property = "id",column = "id"),
-            @Result(property = "username",column = "username"),
-            @Result(property = "password",column = "password"),
-            @Result(property = "birthday",column = "birthday"),
-            @Result(property = "roleList",column = "id",javaType = List.class,
+            @Result(property = "id", column = "id"),
+            @Result(property = "username", column = "username"),
+            @Result(property = "password", column = "password"),
+            @Result(property = "birthday", column = "birthday"),
+            @Result(property = "roleList", column = "id", javaType = List.class,
                     many = @Many(select = "com.lagou.mapper.IRoleMapper.findRoleByUid")),
     })
     List<User> findAllUserAndRole();

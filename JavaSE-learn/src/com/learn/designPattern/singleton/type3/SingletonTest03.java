@@ -11,21 +11,22 @@ public class SingletonTest03 {
         Singleton instance = Singleton.getInstance();
         Singleton instance2 = Singleton.getInstance();
         System.out.println(instance == instance2);  //true
-        System.out.println("instance.hashCode()="+instance.hashCode());
-        System.out.println("instance2.hashCode()="+instance2.hashCode());
+        System.out.println("instance.hashCode()=" + instance.hashCode());
+        System.out.println("instance2.hashCode()=" + instance2.hashCode());
     }
 }
 
-class Singleton{
+class Singleton {
     private static Singleton instance;
 
-    private Singleton(){}
+    private Singleton() {
+    }
 
     //提供一个静态的公有方法，当时用到该方法时，才去创建instance
     //即懒汉式
 
-    public static Singleton getInstance(){
-        if(instance == null){
+    public static Singleton getInstance() {
+        if (instance == null) {
             instance = new Singleton();
         }
         return instance;

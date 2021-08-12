@@ -11,7 +11,7 @@ public class Person {
         return name;
     }
 
-    public void sayHello(){
-        System.out.println("My name is"+ name);
+    public void sayHello() {
+        System.out.println("My name is" + name);
     }
 }

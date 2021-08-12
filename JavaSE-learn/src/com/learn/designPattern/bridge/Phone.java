@@ -13,15 +13,15 @@ public abstract class Phone {
         this.brand = brand;
     }
 
-    protected void open(){
+    protected void open() {
         brand.open();
     }
 
-    protected void close(){
+    protected void close() {
         brand.close();
     }
 
-    protected void call(){
+    protected void call() {
         brand.call();
     }
 }

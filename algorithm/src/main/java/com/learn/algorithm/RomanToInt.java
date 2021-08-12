@@ -17,13 +17,14 @@ public class RomanToInt {
      * 输入: "MCMXCIV"
      * 输出: 1994
      * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
+     *
      * @param s
      * @return
      */
     public static int romanToInt(String s) {
         int result = 0;
-       char[] roman = s.toCharArray();
-       int[] num = new int[roman.length];
+        char[] roman = s.toCharArray();
+        int[] num = new int[roman.length];
         for (int i = 0; i < roman.length; i++) {
             switch (roman[i]) {
                 case 'I':
@@ -52,15 +53,15 @@ public class RomanToInt {
             }
         }
         int point = 0;
-        while (point<num.length){
-            if(point+1<num.length && num[point]<num[point+1]){
-                result += num[point+1]-num[point];
-                point +=2;
-            }else{
+        while (point < num.length) {
+            if (point + 1 < num.length && num[point] < num[point + 1]) {
+                result += num[point + 1] - num[point];
+                point += 2;
+            } else {
                 result += num[point];
-                point ++;
+                point++;
             }
         }
-       return result;
+        return result;
     }
 }

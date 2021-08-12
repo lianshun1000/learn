@@ -16,9 +16,9 @@ public class SingletonTest02 {
 /**
  * 饿汉式（静态代码块）
  */
-class Singleton{
-     //1、构造器私有化，防止new
-    private Singleton(){
+class Singleton {
+    //1、构造器私有化，防止new
+    private Singleton() {
 
     }
 
@@ -30,7 +30,7 @@ class Singleton{
     }
 
     //3、提供一个公有的静态方法，返回实例对象
-    public static Singleton getInstance(){
+    public static Singleton getInstance() {
         return instance;
     }
 }

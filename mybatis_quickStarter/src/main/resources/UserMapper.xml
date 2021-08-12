@@ -16,10 +16,10 @@
 
     <!--新增用户-->
     <insert id="saveUser" parameterType="user">
-       insert into user values (#{id},#{username})
+        insert into user values (#{id},#{username})
     </insert>
-    
-     <!--修改-->
+
+    <!--修改-->
     <update id="updateUser" parameterType="user">
         update user set username = #{username} where id = #{id}
     </update>
@@ -28,7 +28,7 @@
     <delete id="deleteUser" parameterType="user">
         delete from user where id = #{id}
     </delete>
-    
+
     <!--多条件组合查询-->
     <select id="findByCondition" parameterType="user" resultType="user">
         <include refid="selectUser"></include>
@@ -45,10 +45,10 @@
     <!--多值查询-->
     <select id="findByIds" parameterType="list" resultType="user">
         <include refid="selectUser"></include>
-         <where>
-             <foreach collection="array" open=" id in (" close=")" item="id" separator=",">
-                  #{id}
-             </foreach>
-         </where>
+        <where>
+            <foreach collection="array" open=" id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
     </select>
 </mapper>

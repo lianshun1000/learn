@@ -5,7 +5,7 @@ package com.learn.designPattern.adapter.interfaceAdapter;
  * @date 2021/7/17 5:13 下午
  * @description
  */
-public class AbsAdapter implements Interface4{
+public class AbsAdapter implements Interface4 {
     @Override
     public void m1() {
 

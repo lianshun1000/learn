@@ -20,7 +20,7 @@ import java.util.List;
  * @date 2021/7/21 10:12 下午
  * @description
  */
-public class SimpleExecutor implements Executor{
+public class SimpleExecutor implements Executor {
     @Override
     public <E> List<E> query(Configuration configuration, MappedStatement mappedStatement, Object... params) throws Exception {
 
@@ -36,9 +36,9 @@ public class SimpleExecutor implements Executor{
         PreparedStatement preparedStatement = connection.prepareStatement(boundSql.getSqlText());
 
         //4.设置参数
-           //获取到了参数的全路径
+        //获取到了参数的全路径
         String paramterType = mappedStatement.getParamterType();
-        Class<?> parameterTypeClass =  getClassType(paramterType);
+        Class<?> parameterTypeClass = getClassType(paramterType);
         List<ParameterMapping> parameterMappingList = boundSql.getParameterMappingList();
         for (int i = 0; i < parameterMappingList.size(); i++) {
             ParameterMapping parameterMapping = parameterMappingList.get(i);
@@ -49,7 +49,7 @@ public class SimpleExecutor implements Executor{
             declaredField.setAccessible(true);//暴力访问
             Object o = declaredField.get(params[0]);
 
-            preparedStatement.setObject(i+1,o);
+            preparedStatement.setObject(i + 1, o);
         }
 
         //5.执行sql
@@ -58,11 +58,11 @@ public class SimpleExecutor implements Executor{
         Class<?> resultTypeClass = getClassType(resultType);
         ArrayList<Object> objects = new ArrayList<>();
         //6.封装返回结果集
-        while (resultSet.next()){
+        while (resultSet.next()) {
             Object o = resultTypeClass.newInstance();
             //元数据
             ResultSetMetaData metaData = resultSet.getMetaData();
-            for (int i = 1;i <= metaData.getColumnCount();i++){
+            for (int i = 1; i <= metaData.getColumnCount(); i++) {
                 //字段名
                 String columnName = metaData.getColumnName(i);
                 //字段的值
@@ -70,13 +70,13 @@ public class SimpleExecutor implements Executor{
                 //使用反射或者内省，根据数据库表和实体的对应关系，完成封装
                 PropertyDescriptor propertyDescriptor = new PropertyDescriptor(columnName, resultTypeClass);
                 Method writeMethod = propertyDescriptor.getWriteMethod();
-                writeMethod.invoke(o,value);
+                writeMethod.invoke(o, value);
             }
 
             objects.add(o);
         }
 
-        return (List<E>)objects;
+        return (List<E>) objects;
     }
 
     @Override
@@ -95,13 +95,13 @@ public class SimpleExecutor implements Executor{
         //4.设置参数
         //获取到了参数的全路径
         String paramterType = mappedStatement.getParamterType();
-        Class<?> parameterTypeClass =  getClassType(paramterType);
+        Class<?> parameterTypeClass = getClassType(paramterType);
         List<ParameterMapping> parameterMappingList = boundSql.getParameterMappingList();
         for (int i = 0; i < parameterMappingList.size(); i++) {
 
-            if(parameterTypeClass.toString().equals("class java.lang.Integer")){
+            if (parameterTypeClass.toString().equals("class java.lang.Integer")) {
                 preparedStatement.setObject(i + 1, params[0]);
-            }else {
+            } else {
                 ParameterMapping parameterMapping = parameterMappingList.get(i);
                 String content = parameterMapping.getContent();
                 //反射
@@ -113,22 +113,23 @@ public class SimpleExecutor implements Executor{
         }
 
         //5.执行sql
-         preparedStatement.execute();
+        preparedStatement.execute();
         int rows = preparedStatement.getUpdateCount();
         return rows;
     }
 
     private Class<?> getClassType(String paramterType) throws ClassNotFoundException {
-        if(paramterType != null){
+        if (paramterType != null) {
             Class<?> aClass = Class.forName(paramterType);
             return aClass;
-        }else {
+        } else {
             return null;
         }
     }
 
     /**
      * 完成对#{}的解析工作：1.将#{}用？进行代替  2.解析出#{}里面的值进行存储
+     *
      * @param sql
      * @return
      */
@@ -142,7 +143,7 @@ public class SimpleExecutor implements Executor{
         //#{}里面的参数名称
         List<ParameterMapping> parameterMappings = parameterMappingTokenHandler.getParameterMappings();
 
-        BoundSql boundSql = new BoundSql(parseSql,parameterMappings);
+        BoundSql boundSql = new BoundSql(parseSql, parameterMappings);
         return boundSql;
 
     }

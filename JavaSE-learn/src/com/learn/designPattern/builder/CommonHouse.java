@@ -5,7 +5,7 @@ package com.learn.designPattern.builder;
  * @date 2021/7/17 2:31 下午
  * @description
  */
-public class CommonHouse extends AbstractHouse{
+public class CommonHouse extends AbstractHouse {
     @Override
     public void buildBasic() {
         System.out.println("普通房子打地基");

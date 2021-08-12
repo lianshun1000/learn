@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lagou-mp-springboot:war">
+    <output-path>$PROJECT_DIR$/lagou-mp-springboot/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lagou-mp-springboot</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lagou-mp-springboot-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lagou-mp-springboot:war exploded" />
+    </root>
+  </artifact>
+</component>

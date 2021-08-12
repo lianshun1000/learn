@@ -5,8 +5,8 @@ public class TestVolatile {
         ThreadDemo threadDemo = new ThreadDemo();
         new Thread(threadDemo).start();
 
-        while(true){
-            if (threadDemo.isFlag()){
+        while (true) {
+            if (threadDemo.isFlag()) {
                 System.out.println("-------------");
                 break;
             }
@@ -14,11 +14,11 @@ public class TestVolatile {
     }
 }
 
-class ThreadDemo implements Runnable{
+class ThreadDemo implements Runnable {
 
     private volatile boolean flag = false;
 
-    public  boolean isFlag() {
+    public boolean isFlag() {
         return flag;
     }
 

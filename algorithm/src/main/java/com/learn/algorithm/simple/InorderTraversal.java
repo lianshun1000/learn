@@ -14,25 +14,32 @@ public class InorderTraversal {
     }
 
     public List<Integer> inorderTraversal(TreeNode root) {
-       List<Integer> list = new ArrayList<>();
-       TreeNode treeNode = root;
-       if(treeNode.left != null && treeNode.left.left !=null){}
+        List<Integer> list = new ArrayList<>();
+        TreeNode treeNode = root;
+        if (treeNode.left != null && treeNode.left.left != null) {
+        }
 
 
-       return list;
+        return list;
     }
 }
 
 
- class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}

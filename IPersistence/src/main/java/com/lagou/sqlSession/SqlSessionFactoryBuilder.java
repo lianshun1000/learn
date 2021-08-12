@@ -16,8 +16,8 @@ public class SqlSessionFactoryBuilder {
 
     public SqlSessionFactory build(InputStream in) throws DocumentException, PropertyVetoException {
         //第一使用dom4j解析配置文件，将解析出来的内容封装到Configuration中
-         XMLConfigBuilder xmlConfigBuilder = new XMLConfigBuilder();
-         Configuration configuration = xmlConfigBuilder.parseConfig(in);
+        XMLConfigBuilder xmlConfigBuilder = new XMLConfigBuilder();
+        Configuration configuration = xmlConfigBuilder.parseConfig(in);
 
         //创建sqlSessionFactory对象
         DefaultSqlSessionFactory defaultSqlSessionFactory = new DefaultSqlSessionFactory(configuration);

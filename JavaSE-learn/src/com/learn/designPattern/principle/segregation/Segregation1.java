@@ -1,17 +1,22 @@
 package com.learn.designPattern.principle.segregation;
+
 //接口隔离原则
 public class Segregation1 {
 }
 
-interface Interface1{
+interface Interface1 {
     void operation1();
+
     void operation2();
+
     void operation3();
+
     void operation4();
+
     void operation5();
 }
 
-class B implements Interface1{
+class B implements Interface1 {
 
     @Override
     public void operation1() {
@@ -40,7 +45,7 @@ class B implements Interface1{
 }
 
 
-class D implements Interface1{
+class D implements Interface1 {
 
     @Override
     public void operation1() {
@@ -69,26 +74,30 @@ class D implements Interface1{
 }
 
 
-class A{
-    public void depend1(Interface1 i){
+class A {
+    public void depend1(Interface1 i) {
         i.operation1();
     }
-    public void depend2(Interface1 i){
+
+    public void depend2(Interface1 i) {
         i.operation2();
     }
-    public void depend3(Interface1 i){
+
+    public void depend3(Interface1 i) {
         i.operation3();
     }
 }
 
-class C{
-    public void depend1(Interface1 i){
+class C {
+    public void depend1(Interface1 i) {
         i.operation1();
     }
-    public void depend4(Interface1 i){
+
+    public void depend4(Interface1 i) {
         i.operation4();
     }
-    public void depend5(Interface1 i){
+
+    public void depend5(Interface1 i) {
         i.operation5();
     }
 }

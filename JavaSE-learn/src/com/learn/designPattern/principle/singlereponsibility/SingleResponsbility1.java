@@ -1,4 +1,5 @@
 package com.learn.designPattern.principle.singlereponsibility;
+
 //单一职责原则
 public class SingleResponsbility1 {
     public static void main(String[] args) {
@@ -12,8 +13,8 @@ public class SingleResponsbility1 {
 //交通工具类
 //方式一
 //在run方法中违反了单一职责，可以根据不同交通工具的运行方法，分解成不同的类
-class Vehicle{
-    public void run(String vehicle){
+class Vehicle {
+    public void run(String vehicle) {
         System.out.println(vehicle + "在公路上运行");
     }
 }

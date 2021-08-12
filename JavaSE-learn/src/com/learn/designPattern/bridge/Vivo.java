@@ -5,7 +5,7 @@ package com.learn.designPattern.bridge;
  * @date 2021/7/17 7:32 下午
  * @description
  */
-public class Vivo implements Brand{
+public class Vivo implements Brand {
 
     @Override
     public void open() {

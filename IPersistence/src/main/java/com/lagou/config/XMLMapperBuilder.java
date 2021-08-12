@@ -46,7 +46,7 @@ public class XMLMapperBuilder {
             mappedStatement.setSql(sqlText);
 
             String key = namespace + "." + id;
-            configuration.getMappedStatementMap().put(key,mappedStatement);
+            configuration.getMappedStatementMap().put(key, mappedStatement);
         }
 
     }

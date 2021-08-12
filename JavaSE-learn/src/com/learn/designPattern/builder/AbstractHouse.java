@@ -12,7 +12,7 @@ public abstract class AbstractHouse {
 
     public abstract void roofed();
 
-    public void build(){
+    public void build() {
         buildBasic();
         buildWall();
         roofed();

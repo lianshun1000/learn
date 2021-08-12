@@ -20,7 +20,7 @@ public class ConditionDemo {
                     e.printStackTrace();
                 }
             }
-        },"A").start();
+        }, "A").start();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 try {
@@ -29,7 +29,7 @@ public class ConditionDemo {
                     e.printStackTrace();
                 }
             }
-        },"B").start();
+        }, "B").start();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 try {
@@ -38,67 +38,66 @@ public class ConditionDemo {
                     e.printStackTrace();
                 }
             }
-        },"C").start();
+        }, "C").start();
     }
 }
 
-class ShareDate{
+class ShareDate {
     private int number = 1;//A:1  B:2   C:3
     private Lock lock = new ReentrantLock();
     private Condition c1 = lock.newCondition();
     private Condition c2 = lock.newCondition();
     private Condition c3 = lock.newCondition();
 
-    public void print5() throws Exception{
+    public void print5() throws Exception {
         lock.lock();
         try {
-            while (number != 1){
-               c1.await();
+            while (number != 1) {
+                c1.await();
             }
             for (int i = 0; i < 5; i++) {
-                System.out.println(Thread.currentThread().getName()+"    "+i);
+                System.out.println(Thread.currentThread().getName() + "    " + i);
             }
             number = 2;
             //如何通知第二个
             c2.signal();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
 
-    public void print10() throws Exception{
+    public void print10() throws Exception {
         lock.lock();
         try {
-            while (number != 2){
+            while (number != 2) {
                 c2.await();
             }
             for (int i = 0; i < 10; i++) {
-                System.out.println(Thread.currentThread().getName()+"    "+i);
+                System.out.println(Thread.currentThread().getName() + "    " + i);
             }
             number = 3;
             //如何通知第二个
             c3.signal();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
 
-
-    public void print15() throws Exception{
+    public void print15() throws Exception {
         lock.lock();
         try {
-            while (number != 3){
+            while (number != 3) {
                 c3.await();
             }
             for (int i = 0; i < 15; i++) {
-                System.out.println(Thread.currentThread().getName()+"    "+i);
+                System.out.println(Thread.currentThread().getName() + "    " + i);
             }
             number = 1;
             //如何通知第二个
             c1.signal();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }

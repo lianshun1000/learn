@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ProdConsumerDemo {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         AirCondition airCondition = new AirCondition();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
@@ -16,7 +16,7 @@ public class ProdConsumerDemo {
                     e.printStackTrace();
                 }
             }
-        },"A").start();
+        }, "A").start();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 try {
@@ -26,7 +26,7 @@ public class ProdConsumerDemo {
                     e.printStackTrace();
                 }
             }
-        },"B").start();
+        }, "B").start();
 
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
@@ -37,7 +37,7 @@ public class ProdConsumerDemo {
                     e.printStackTrace();
                 }
             }
-        },"C").start();
+        }, "C").start();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 try {
@@ -47,11 +47,11 @@ public class ProdConsumerDemo {
                     e.printStackTrace();
                 }
             }
-        },"D").start();
+        }, "D").start();
     }
 }
 
-class AirCondition{
+class AirCondition {
     private int number = 0;
 
     /*public synchronized void increment() throws Exception{
@@ -80,31 +80,31 @@ class AirCondition{
     private Lock lock = new ReentrantLock();//可重入非公平的递归锁
     private Condition condition = lock.newCondition();
 
-    public  void increment() throws Exception{
+    public void increment() throws Exception {
         lock.lock();
         try {
-            while(number != 0) {
+            while (number != 0) {
                 condition.await();
             }
             number++;
-            System.out.println(Thread.currentThread().getName()+"    "+number);
+            System.out.println(Thread.currentThread().getName() + "    " + number);
             condition.signal();
-        }finally {
+        } finally {
             condition.signalAll();
         }
 
     }
 
-    public  void decrement() throws Exception{
+    public void decrement() throws Exception {
         lock.lock();
         try {
-            while(number == 0) {
+            while (number == 0) {
                 condition.await();
             }
             number--;
-            System.out.println(Thread.currentThread().getName()+"    "+number);
+            System.out.println(Thread.currentThread().getName() + "    " + number);
             condition.signal();
-        }finally {
+        } finally {
             condition.signalAll();
         }
     }

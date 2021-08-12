@@ -2,7 +2,7 @@ package com.learn.springmvc.beans;
 
 public class Address {
     private String province;
-    private  String city;
+    private String city;
 
     public Address(String province, String city) {
         this.province = province;

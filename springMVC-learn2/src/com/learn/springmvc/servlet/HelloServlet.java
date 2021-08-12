@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet {
         //从ServletContext中获取容器对象
         ServletContext sc = getServletContext();
         ApplicationContext ctx = (ApplicationContext) sc.getAttribute("applicationContext");
-        Person person = ctx.getBean("person",Person.class);
+        Person person = ctx.getBean("person", Person.class);
         person.sayHello();
     }
 

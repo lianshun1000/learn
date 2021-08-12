@@ -14,8 +14,8 @@ import java.util.Properties;
  */
 @Intercepts({
         @Signature(type = StatementHandler.class,
-                   method = "prepare",
-                   args = {Connection.class,Integer.class})
+                method = "prepare",
+                args = {Connection.class, Integer.class})
 })
 public class MyPlugin implements Interceptor {
     @Override
@@ -35,6 +35,6 @@ public class MyPlugin implements Interceptor {
     @Override
     //获取配置文件的参数
     public void setProperties(Properties properties) {
-        System.out.println("获取到的配置文件的参数："+properties);
+        System.out.println("获取到的配置文件的参数：" + properties);
     }
 }

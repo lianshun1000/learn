@@ -11,21 +11,21 @@ public class Ocp {
     }
 }
 
-class GraphicEditor{
-    public void drawShape(Shape s){
+class GraphicEditor {
+    public void drawShape(Shape s) {
         s.draw();
     }
 
 }
 
-abstract class Shape{
+abstract class Shape {
     int m_type;
 
     public abstract void draw();
 }
 
-class Rectangle extends Shape{
-    Rectangle(){
+class Rectangle extends Shape {
+    Rectangle() {
         super.m_type = 1;
     }
 
@@ -35,8 +35,8 @@ class Rectangle extends Shape{
     }
 }
 
-class Circle extends Shape{
-    Circle(){
+class Circle extends Shape {
+    Circle() {
         super.m_type = 2;
     }
 
@@ -46,8 +46,8 @@ class Circle extends Shape{
     }
 }
 
-class Triangle extends Shape{
-    Triangle(){
+class Triangle extends Shape {
+    Triangle() {
         super.m_type = 3;
     }
 

@@ -44,7 +44,7 @@ public class MybatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession(true);//自动提交
         User user = new User();
         user.setUsername("tom");
-        sqlSession.insert("user.saveUser",user);
+        sqlSession.insert("user.saveUser", user);
         sqlSession.close();
     }
 
@@ -56,7 +56,7 @@ public class MybatisTest {
         User user = new User();
         user.setId(3);
         user.setUsername("张壮壮");
-        sqlSession.update("user.updateUser",user);
+        sqlSession.update("user.updateUser", user);
         sqlSession.commit();
         sqlSession.close();
     }
@@ -66,7 +66,7 @@ public class MybatisTest {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        sqlSession.delete("user.deleteUser",3);
+        sqlSession.delete("user.deleteUser", 3);
         sqlSession.commit();
         sqlSession.close();
     }

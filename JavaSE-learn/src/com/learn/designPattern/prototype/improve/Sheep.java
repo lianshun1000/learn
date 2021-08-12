@@ -5,7 +5,7 @@ package com.learn.designPattern.prototype.improve;
  * @date 2021/7/11 1:31 下午
  * @description
  */
-public class Sheep implements Cloneable{
+public class Sheep implements Cloneable {
     private String name;
     private int age;
     private String color;
@@ -51,10 +51,10 @@ public class Sheep implements Cloneable{
 
     //克隆该实例，使用默认的clone方法来完成
     @Override
-    protected Object clone(){
+    protected Object clone() {
         Sheep sheep = null;
         try {
-            sheep = (Sheep)super.clone();
+            sheep = (Sheep) super.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

@@ -17,11 +17,11 @@ public abstract class OrderPizza {
     abstract Pizza createPizza(String orderType);
 
     //构造器
-    public OrderPizza(){
+    public OrderPizza() {
         Pizza pizza = null;
         String orderType;//订购pizza类型
 
-        do{
+        do {
             orderType = getType();
             createPizza(orderType);
 
@@ -30,7 +30,7 @@ public abstract class OrderPizza {
             pizza.bake();
             pizza.cut();
             pizza.box();
-        }while (true);
+        } while (true);
     }
 
 
@@ -62,13 +62,13 @@ public abstract class OrderPizza {
     }*/
 
     //写一个方法，可以获取客户希望订购的pizza种类
-    private String getType(){
+    private String getType() {
         try {
             BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("input pizza type:");
             String str = strin.readLine();
             return str;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return "";
         }

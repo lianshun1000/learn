@@ -20,5 +20,5 @@ public class Configuration {
      * key:statementId
      * value:封装好的MappedStatement对象
      */
-    Map<String,MappedStatement> mappedStatementMap = new HashMap<>();
+    Map<String, MappedStatement> mappedStatementMap = new HashMap<>();
 }

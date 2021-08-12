@@ -13,9 +13,10 @@ public class UserHandler {
     public UserHandler() {
         System.out.println("UserHandler");
     }
+
     @RequestMapping("/hello")
-    public String hello(){
-          userService.hello();
-          return "success";
+    public String hello() {
+        userService.hello();
+        return "success";
     }
 }

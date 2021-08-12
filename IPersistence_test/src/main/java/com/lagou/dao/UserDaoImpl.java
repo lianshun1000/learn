@@ -16,7 +16,7 @@ import java.util.List;
  * @date 2021/7/22 12:33 上午
  * @description
  */
-public class UserDaoImpl implements IUserDao{
+public class UserDaoImpl implements IUserDao {
     @Override
     public List<User> findAll() throws Exception {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
@@ -36,7 +36,7 @@ public class UserDaoImpl implements IUserDao{
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        User user2 = sqlSession.selectOne("user.selectOne",user);
+        User user2 = sqlSession.selectOne("user.selectOne", user);
         System.out.println(user2);
         return user2;
     }
@@ -47,7 +47,7 @@ public class UserDaoImpl implements IUserDao{
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        int rows = sqlSession.update("user.updateUser",user);
+        int rows = sqlSession.update("user.updateUser", user);
         return rows;
     }
 
@@ -57,7 +57,7 @@ public class UserDaoImpl implements IUserDao{
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        int rows = sqlSession.update("user.insertUser",user);
+        int rows = sqlSession.update("user.insertUser", user);
         return rows;
     }
 
@@ -67,7 +67,7 @@ public class UserDaoImpl implements IUserDao{
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        int rows = sqlSession.update("user.deleteUser",id);
+        int rows = sqlSession.update("user.deleteUser", id);
         return rows;
     }
 }

@@ -21,7 +21,7 @@ import java.util.List;
 public class IPersistenceTest {
 
     @Test
-    public void test() throws Exception{
+    public void test() throws Exception {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -49,9 +49,8 @@ public class IPersistenceTest {
     }
 
 
-
     @Test
-    public void test2() throws Exception{
+    public void test2() throws Exception {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -69,7 +68,7 @@ public class IPersistenceTest {
 
 
     @Test
-    public void test3() throws Exception{
+    public void test3() throws Exception {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -87,7 +86,7 @@ public class IPersistenceTest {
 
 
     @Test
-    public void test4() throws Exception{
+    public void test4() throws Exception {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();

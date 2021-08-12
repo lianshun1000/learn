@@ -7,7 +7,7 @@ import java.io.*;
  * @date 2021/7/11 2:28 下午
  * @description
  */
-public class DeepProtoType implements Serializable,Cloneable {
+public class DeepProtoType implements Serializable, Cloneable {
     public String name;
 
     public DeepCloneableTarget deepCloneableTarget;
@@ -30,7 +30,7 @@ public class DeepProtoType implements Serializable,Cloneable {
     }
 
     //序列化
-    public Object deepClone(){
+    public Object deepClone() {
         //创建流对象
         ByteArrayOutputStream bos = null;
         ObjectOutputStream oos = null;
@@ -46,16 +46,16 @@ public class DeepProtoType implements Serializable,Cloneable {
             ois = new ObjectInputStream(bis);
             DeepProtoType copyObj = (DeepProtoType) ois.readObject();
             return copyObj;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }finally {
+        } finally {
             try {
                 bos.close();
                 oos.close();
                 bis.close();
                 ois.close();
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
                 return null;
             }

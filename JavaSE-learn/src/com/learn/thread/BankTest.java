@@ -1,14 +1,16 @@
 package com.learn.thread;
+
 //单例模式中的懒汉式改为线程安全
 public class BankTest {
 }
 
-class Bank{
-    private Bank(){}
+class Bank {
+    private Bank() {
+    }
 
-    private static  Bank instance = null;
+    private static Bank instance = null;
 
-    public static  Bank getInstance(){
+    public static Bank getInstance() {
         //方式一：效率稍差
         /*synchronized (Bank.class) {
             if (instance == null) {
@@ -18,7 +20,7 @@ class Bank{
         }*/
 
         //方式二
-        if(instance == null) {
+        if (instance == null) {
             synchronized (Bank.class) {
                 if (instance == null) {
                     instance = new Bank();

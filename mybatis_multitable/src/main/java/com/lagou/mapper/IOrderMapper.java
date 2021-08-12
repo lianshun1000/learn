@@ -18,10 +18,10 @@ import java.util.List;
 public interface IOrderMapper {
     //查询订单的同时，查询该订单所属用户
     @Results({
-        @Result(property = "id",column = "id"),
-        @Result(property = "orderTime",column = "orderTime"),
-        @Result(property = "total",column = "total"),
-        @Result(property = "user",column = "uid",javaType = User.class,one = @One(select = "com.lagou.mapper.IUserMapper.findUserById"))
+            @Result(property = "id", column = "id"),
+            @Result(property = "orderTime", column = "orderTime"),
+            @Result(property = "total", column = "total"),
+            @Result(property = "user", column = "uid", javaType = User.class, one = @One(select = "com.lagou.mapper.IUserMapper.findUserById"))
     })
     @Select("select * from orders")
     List<Order> findOrderAndUser();

@@ -54,7 +54,7 @@ public class CreateLicense {
         try (InputStream in = getClass().getResourceAsStream(confPath)) {
             prop.load(in);
         } catch (IOException e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
         //common param
         priAlias = prop.getProperty("private.key.alias");

@@ -9,7 +9,7 @@ import java.util.Collections;
  * @date 2021/7/21 9:47 下午
  * @description
  */
-public class DefaultSqlSessionFactory implements SqlSessionFactory{
+public class DefaultSqlSessionFactory implements SqlSessionFactory {
 
     private Configuration configuration;
 

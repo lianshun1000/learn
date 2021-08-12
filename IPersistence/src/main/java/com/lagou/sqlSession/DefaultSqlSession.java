@@ -26,15 +26,15 @@ public class DefaultSqlSession implements SqlSession {
         SimpleExecutor simpleExecutor = new SimpleExecutor();
         MappedStatement mappedStatement = configuration.getMappedStatementMap().get(statementId);
         List<Object> list = simpleExecutor.query(configuration, mappedStatement, params);
-        return (List<E>)list;
+        return (List<E>) list;
     }
 
     @Override
     public <T> T selectOne(String statementId, Object... params) throws Exception {
         List<Object> objects = selectList(statementId, params);
-        if (objects.size() == 1){
-            return (T)objects.get(0);
-        }else {
+        if (objects.size() == 1) {
+            return (T) objects.get(0);
+        } else {
             throw new RuntimeException("查询结果为空或返回结果过多");
         }
     }
@@ -53,25 +53,25 @@ public class DefaultSqlSession implements SqlSession {
                 //1.准备参数：statementId=namespace.id,sql语句的唯一表识  namespace.id=接口全限类名.方法名
                 String methodName = method.getName();
                 String className = method.getDeclaringClass().getName();
-                String statementId = className+"."+methodName;
+                String statementId = className + "." + methodName;
 
                 //准备参数2：params：args
                 //获取被调用方法的返回值类型
                 Type genericReturnType = method.getGenericReturnType();
                 System.out.println(genericReturnType.toString());
                 //判断是否进行了 泛型类型参数化
-                if(genericReturnType instanceof ParameterizedType){
-                   List<Object> objects = selectList(statementId,args);
-                   return objects;
-                }else if (genericReturnType.toString().equals("int")){
-                    int rows = update(statementId,args);
+                if (genericReturnType instanceof ParameterizedType) {
+                    List<Object> objects = selectList(statementId, args);
+                    return objects;
+                } else if (genericReturnType.toString().equals("int")) {
+                    int rows = update(statementId, args);
                     return rows;
                 }
-                return selectOne(statementId,args);
+                return selectOne(statementId, args);
             }
         });
 
-        return (T)proxyInstance;
+        return (T) proxyInstance;
     }
 
     @Override
@@ -84,11 +84,11 @@ public class DefaultSqlSession implements SqlSession {
 
     @Override
     public int insert(String statement, Object... parameter) throws Exception {
-        return update(statement,parameter);
+        return update(statement, parameter);
     }
 
     @Override
     public int delete(String statement, Object... parameter) throws Exception {
-        return update(statement,parameter);
+        return update(statement, parameter);
     }
 }

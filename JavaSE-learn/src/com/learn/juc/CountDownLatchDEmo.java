@@ -8,15 +8,15 @@ import java.util.concurrent.CountDownLatch;
  * 当计数器变为0时，因await方法阻塞的线程将会被唤醒，继续执行
  */
 public class CountDownLatchDEmo {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         CountDownLatch countDownLatch = new CountDownLatch(6);
         for (int i = 0; i < 6; i++) {
-           new Thread(() -> {
-               System.out.println(Thread.currentThread().getName()+"离开");
-               countDownLatch.countDown();
-           },String.valueOf(i)).start();
+            new Thread(() -> {
+                System.out.println(Thread.currentThread().getName() + "离开");
+                countDownLatch.countDown();
+            }, String.valueOf(i)).start();
         }
         countDownLatch.await();
-        System.out.println(Thread.currentThread().getName()+"班长离开");
+        System.out.println(Thread.currentThread().getName() + "班长离开");
     }
 }

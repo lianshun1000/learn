@@ -28,7 +28,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.offer("a"));
         System.out.println(blockingQueue.offer("b"));
         System.out.println(blockingQueue.offer("c"));
-       // System.out.println(blockingQueue.offer("d"));  返回false
+        // System.out.println(blockingQueue.offer("d"));  返回false
 
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());
@@ -39,7 +39,7 @@ public class BlockingQueueDemo {
         blockingQueue.put("a");
         blockingQueue.put("a");
         blockingQueue.put("a");
-       // blockingQueue.put("a");   //阻塞队列已满，则一直阻塞
+        // blockingQueue.put("a");   //阻塞队列已满，则一直阻塞
 
         blockingQueue.take();
         blockingQueue.take();
@@ -50,7 +50,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.offer("a"));
         System.out.println(blockingQueue.offer("b"));
         System.out.println(blockingQueue.offer("c"));
-        blockingQueue.offer("a",3L, TimeUnit.SECONDS);
+        blockingQueue.offer("a", 3L, TimeUnit.SECONDS);
 
 
     }

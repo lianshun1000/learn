@@ -3,7 +3,7 @@ package com.learn.springmvc.beans;
 
 public class User {
     private String userName;
-    private  String passWord;
+    private String passWord;
     private String email;
     private Integer gender;
     private Address address;

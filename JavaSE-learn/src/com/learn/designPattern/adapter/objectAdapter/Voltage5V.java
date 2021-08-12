@@ -6,5 +6,5 @@ package com.learn.designPattern.adapter.objectAdapter;
  * @description
  */
 public interface Voltage5V {
-     int output5V();
+    int output5V();
 }

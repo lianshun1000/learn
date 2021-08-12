@@ -15,9 +15,9 @@ public class VoltageAdapter implements Voltage5V {
     @Override
     public int output5V() {
         int dst = 0;
-        if(null != v){
+        if (null != v) {
             int src = v.output220V();
-            dst = src/44;
+            dst = src / 44;
             System.out.println("适配完成");
         }
         return dst;

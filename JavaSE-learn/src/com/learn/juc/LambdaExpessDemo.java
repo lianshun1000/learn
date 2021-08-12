@@ -2,9 +2,8 @@ package com.learn.juc;
 
 /**
  * 1、函数式编程
- *
+ * <p>
  * 拷贝小括号，写死右箭头，落地大括号
- *
  */
 public class LambdaExpessDemo {
     public static void main(String[] args) {
@@ -16,14 +15,14 @@ public class LambdaExpessDemo {
 }
 
 @FunctionalInterface
-interface Foo{
-     void sayHello();
+interface Foo {
+    void sayHello();
 
-     default int  mul(int x,int y){
+    default int mul(int x, int y) {
         return x * y;
     }
 
-     static int  add(int x,int y){
+    static int add(int x, int y) {
         return x + y;
     }
 

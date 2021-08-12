@@ -7,14 +7,14 @@ import java.util.concurrent.*;
  */
 public class MyThreadPoolDemo {
     public static void main(String[] args) {
-       ExecutorService threadPool = new ThreadPoolExecutor(
-               2,
-               Runtime.getRuntime().availableProcessors()+1,//CPU核数+1
-               2L,
-               TimeUnit.SECONDS,
-               new LinkedBlockingQueue<>(3),
-               Executors.defaultThreadFactory(),
-               new ThreadPoolExecutor.AbortPolicy());
+        ExecutorService threadPool = new ThreadPoolExecutor(
+                2,
+                Runtime.getRuntime().availableProcessors() + 1,//CPU核数+1
+                2L,
+                TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy());
     }
 
     private static void initPool() {
@@ -27,15 +27,15 @@ public class MyThreadPoolDemo {
         try {
             //模拟有10个顾客前来办理业务，五个工作人员提供服务
             for (int i = 0; i < 10; i++) {
-                 threadPool.execute(() -> {
-                     System.out.println(Thread.currentThread().getName()+"办理业务");
-                 });
+                threadPool.execute(() -> {
+                    System.out.println(Thread.currentThread().getName() + "办理业务");
+                });
                 TimeUnit.MILLISECONDS.sleep(400);
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             threadPool.shutdown();
         }
     }

@@ -9,13 +9,13 @@ import com.learn.designPattern.factory.simpleFactory.pizzastore.pizza.Pizza;
  * @date 2021/6/26 8:59 下午
  * @description
  */
-public class LDOrderPizza extends OrderPizza{
+public class LDOrderPizza extends OrderPizza {
     @Override
     Pizza createPizza(String orderType) {
         Pizza pizza = null;
-        if(orderType.equals("cheese")){
+        if (orderType.equals("cheese")) {
             pizza = new LDCheesePizza();
-        }else if(orderType.equals("pepper")){
+        } else if (orderType.equals("pepper")) {
             pizza = new LDPepperPizza();
         }
         return pizza;

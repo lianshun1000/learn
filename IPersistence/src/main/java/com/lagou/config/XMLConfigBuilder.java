@@ -31,7 +31,7 @@ public class XMLConfigBuilder {
      */
     public Configuration parseConfig(InputStream inputStream) throws DocumentException, PropertyVetoException {
 
-        Document document =  new SAXReader().read(inputStream);
+        Document document = new SAXReader().read(inputStream);
         //<configuration>
         Element rootElement = document.getRootElement();
         List<Element> list = rootElement.selectNodes("//property");
@@ -39,7 +39,7 @@ public class XMLConfigBuilder {
         for (Element element : list) {
             String name = element.attributeValue("name");
             String value = element.attributeValue("value");
-            properties.setProperty(name,value);
+            properties.setProperty(name, value);
         }
 
         //使用数据库连接池，防止频繁的创建和断开连接
@@ -59,8 +59,8 @@ public class XMLConfigBuilder {
             XMLMapperBuilder xmlMapperBuilder = new XMLMapperBuilder(configuration);
             xmlMapperBuilder.parse(resourceAsStream);
         }
-        
-        
+
+
         return configuration;
     }
 

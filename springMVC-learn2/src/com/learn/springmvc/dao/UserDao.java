@@ -8,7 +8,7 @@ public class UserDao {
         System.out.println("UserDao");
     }
 
-    public void hello(){
+    public void hello() {
         System.out.println("Hello");
     }
 }

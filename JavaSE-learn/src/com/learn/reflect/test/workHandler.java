@@ -10,6 +10,7 @@ public class workHandler implements InvocationHandler {
     public workHandler() {
         // TODO Auto-generated constructor stub
     }
+
     //构造函数，给我们的真实对象赋值
     public workHandler(Object obj) {
         this.obj = obj;

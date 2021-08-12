@@ -1,6 +1,6 @@
 package com.learn.entities;
 
-public class Person implements Cloneable{
+public class Person implements Cloneable {
     private Integer id;
     private String personName;
     private User user;

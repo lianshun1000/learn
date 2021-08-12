@@ -9,18 +9,17 @@ public class LinkedList<E> extends AbstractList<E> {
 
     //private int size;从父类继承
 
-    private static class Node<E>{
+    private static class Node<E> {
         Node<E> pre;
         Node<E> next;
         E element;
 
-        public Node(Node pre,Node next,E element){
+        public Node(Node pre, Node next, E element) {
             this.pre = pre;
-           this.next = next;
-           this.element = element;
+            this.next = next;
+            this.element = element;
         }
     }
-
 
 
     @Override
@@ -29,15 +28,15 @@ public class LinkedList<E> extends AbstractList<E> {
         return node(index).element;
     }
 
-    private Node<E> node(int index){
+    private Node<E> node(int index) {
         Node x = first;
         //判断需要查找的节点是靠近头部还是尾部，靠近头则从头开始找，靠近尾部则从尾开始找
-        if(index > size >> 1){
+        if (index > size >> 1) {
             x = last;
             for (int i = size - 1; i > index; i--) {
                 x = x.pre;
             }
-        }else{
+        } else {
             for (int i = 0; i < index; i++) {
                 x = x.next;
             }
@@ -45,14 +44,14 @@ public class LinkedList<E> extends AbstractList<E> {
         return x;
     }
 
-    private void checkElementIndex(int index){
-        if(!isElementIndex(index)){
-            throw new IndexOutOfBoundsException(":Index:"+index+",Size:"+size);
+    private void checkElementIndex(int index) {
+        if (!isElementIndex(index)) {
+            throw new IndexOutOfBoundsException(":Index:" + index + ",Size:" + size);
         }
     }
 
     private boolean isElementIndex(int index) {
-        return index>=0 && index<size;
+        return index >= 0 && index < size;
     }
 
     @Override
@@ -77,45 +76,45 @@ public class LinkedList<E> extends AbstractList<E> {
         }
         size++;*/
 
-        if(index == size){
-           linkLast(element);
-        }else{
-            linkBefore(element,node(index));
+        if (index == size) {
+            linkLast(element);
+        } else {
+            linkBefore(element, node(index));
         }
-       size++;
+        size++;
     }
 
     private void linkLast(E element) {
         Node<E> l = last;
-        Node<E> newNode = new Node<>(l,null,element);
+        Node<E> newNode = new Node<>(l, null, element);
         last = newNode;
-        if(l == null){
-           first = newNode;
-        }else {
+        if (l == null) {
+            first = newNode;
+        } else {
             l.next = newNode;
         }
     }
 
-    private void linkBefore(E element,Node<E> node) {
+    private void linkBefore(E element, Node<E> node) {
         Node<E> pre = node.pre;
-        Node<E> newNode = new Node<>(pre,node,element);
+        Node<E> newNode = new Node<>(pre, node, element);
         node.pre = newNode;
-        if(pre == null){
+        if (pre == null) {
             first = newNode;
-        }else{
+        } else {
             pre.next = newNode;
         }
     }
 
 
     private void checkPositionIndex(int index) {
-        if(!isPosition(index)){
-            throw new IndexOutOfBoundsException(":Index:"+index+",Size:"+size);
+        if (!isPosition(index)) {
+            throw new IndexOutOfBoundsException(":Index:" + index + ",Size:" + size);
         }
     }
 
     private boolean isPosition(int index) {
-        return index>=0 && index<=size;
+        return index >= 0 && index <= size;
     }
 
     @Override
@@ -134,15 +133,15 @@ public class LinkedList<E> extends AbstractList<E> {
         Node<E> pre = node.pre;
         Node<E> next = node.next;
 
-        if(pre ==null){
+        if (pre == null) {
             first = next;
             next.pre = null;
-        }else{
+        } else {
             pre.next = next;
         }
-        if(next == null){
+        if (next == null) {
             last = pre;
-        }else {
+        } else {
             next.pre = pre;
         }
         size--;
@@ -152,21 +151,21 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public int indexOf(E element) {
         //查找有没有element元素，有则返回它的index，没有返回-1
-        Node<E> x =first;
+        Node<E> x = first;
         int index = 0;
-        if(element == null){
-            for (Node i = x;i != null;i = i.next) {
-                if(element == i.element){
+        if (element == null) {
+            for (Node i = x; i != null; i = i.next) {
+                if (element == i.element) {
                     return index;
                 }
-                index ++;
+                index++;
             }
-        }else{
-            for (Node i = x;i != null;i = i.next) {
-                if(element.equals(i.element)){
+        } else {
+            for (Node i = x; i != null; i = i.next) {
+                if (element.equals(i.element)) {
                     return index;
                 }
-                index ++;
+                index++;
             }
         }
         return -1;
@@ -174,21 +173,21 @@ public class LinkedList<E> extends AbstractList<E> {
 
     @Override
     public void clear() {
-       size = 0;
-       first = null;
-       last = null;
+        size = 0;
+        first = null;
+        last = null;
     }
 
 
-    public String toString(){
-        if(size == 0){
+    public String toString() {
+        if (size == 0) {
             return "[]";
         }
         StringBuilder sb = new StringBuilder();
         Node x = first;
-        for (Node i = x;i != null;i = i.next) {
+        for (Node i = x; i != null; i = i.next) {
             sb.append(i.element);
-            if (i.next == null){
+            if (i.next == null) {
                 return sb.append("]").toString();
             }
             sb.append(",");

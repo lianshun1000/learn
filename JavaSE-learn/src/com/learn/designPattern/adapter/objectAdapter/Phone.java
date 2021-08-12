@@ -6,10 +6,10 @@ package com.learn.designPattern.adapter.objectAdapter;
  * @description
  */
 public class Phone {
-    public void charging(Voltage5V v){
-        if(v.output5V() == 5){
+    public void charging(Voltage5V v) {
+        if (v.output5V() == 5) {
             System.out.println("可以充电");
-        }else{
+        } else {
             System.out.println("炸了");
         }
     }

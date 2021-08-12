@@ -89,7 +89,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void addUser(){
+    public void addUser() {
         User user = new User();
         user.setId(3);
         user.setUsername("练顺");
@@ -99,7 +99,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void updateUser(){
+    public void updateUser() {
         User user = new User();
         user.setId(3);
         user.setUsername("刘颖");
@@ -109,7 +109,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void selectUser(){
+    public void selectUser() {
         List<User> users = userMapper.selectUser();
         for (User user : users) {
             System.out.println(user);
@@ -117,12 +117,12 @@ public class MybatisTest {
     }
 
     @Test
-    public void deleteUser(){
+    public void deleteUser() {
         userMapper.deleteUser(3);
     }
 
     @Test
-    public void onToOne(){
+    public void onToOne() {
         List<Order> orderAndUser = orderMapper.findOrderAndUser();
         for (Order order : orderAndUser) {
             System.out.println(order);
@@ -130,7 +130,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void onToMany(){
+    public void onToMany() {
         List<User> users = userMapper.findAll();
         for (User user : users) {
             System.out.println(user);
@@ -138,7 +138,7 @@ public class MybatisTest {
     }
 
     @Test
-    public void manyToMany(){
+    public void manyToMany() {
         List<User> users = userMapper.findAllUserAndRole();
         for (User user : users) {
             System.out.println(user);
@@ -146,17 +146,17 @@ public class MybatisTest {
     }
 
     @Test
-    public void pageHelperTest(){
-        PageHelper.startPage(1,1);
+    public void pageHelperTest() {
+        PageHelper.startPage(1, 1);
         List<User> list = userMapper.selectUser();
         for (User user : list) {
             System.out.println(user);
         }
         PageInfo<User> userPageInfo = new PageInfo<>(list);
-        System.out.println("总条数"+userPageInfo.getTotal());
-        System.out.println("总页数"+userPageInfo.getPages());
-        System.out.println("当前页"+userPageInfo.getPageNum());
-        System.out.println("每页条数"+userPageInfo.getPageSize());
+        System.out.println("总条数" + userPageInfo.getTotal());
+        System.out.println("总页数" + userPageInfo.getPages());
+        System.out.println("当前页" + userPageInfo.getPageNum());
+        System.out.println("每页条数" + userPageInfo.getPageSize());
     }
 
 
@@ -177,7 +177,7 @@ public class MybatisTest {
 
 
         Example example = new Example(User.class);
-        example.createCriteria().andEqualTo("id",1);
+        example.createCriteria().andEqualTo("id", 1);
         List<User> users = userMapper.selectByExample(example);
         for (User user2 : users) {
             System.out.println(user2);

@@ -12,7 +12,7 @@ public class assertAction {
     }
 
     @Test
-    public void testAssert(){
+    public void testAssert() {
         assert 1 == 0;
         System.out.println("断言生效");
     }

@@ -11,48 +11,48 @@ public class Ocp {
     }
 }
 
-class GraphicEditor{
-    public void drawShape(Shape s){
-        if(s.m_type == 1){
-           drawRectangle(s);
-        }else if(s.m_type == 2) {
+class GraphicEditor {
+    public void drawShape(Shape s) {
+        if (s.m_type == 1) {
+            drawRectangle(s);
+        } else if (s.m_type == 2) {
             drawCircle(s);
-        }else if(s.m_type == 3) {
+        } else if (s.m_type == 3) {
             drawTriangle(s);
         }
     }
 
-    public void drawRectangle(Shape r){
+    public void drawRectangle(Shape r) {
         System.out.println("矩形");
     }
 
-    public void drawCircle(Shape r){
+    public void drawCircle(Shape r) {
         System.out.println("圆形");
     }
 
-    public void drawTriangle(Shape r){
+    public void drawTriangle(Shape r) {
         System.out.println("三角形");
     }
 }
 
-class Shape{
+class Shape {
     int m_type;
 }
 
-class Rectangle extends Shape{
-    Rectangle(){
+class Rectangle extends Shape {
+    Rectangle() {
         super.m_type = 1;
     }
 }
 
-class Circle extends Shape{
-    Circle(){
+class Circle extends Shape {
+    Circle() {
         super.m_type = 2;
     }
 }
 
-class Triangle extends Shape{
-    Triangle(){
+class Triangle extends Shape {
+    Triangle() {
         super.m_type = 3;
     }
 }

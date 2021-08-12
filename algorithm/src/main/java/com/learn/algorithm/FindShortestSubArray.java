@@ -4,7 +4,7 @@ import java.util.*;
 
 public class FindShortestSubArray {
     public static void main(String[] args) {
-        int[] nums = {2,1};
+        int[] nums = {2, 1};
         System.out.println(findShortestSubArray2(nums));
     }
 
@@ -38,32 +38,32 @@ public class FindShortestSubArray {
 
     public static int findShortestSubArray2(int[] nums) {
         int size = nums.length;
-        if(size == 1){
+        if (size == 1) {
             return 1;
         }
         HashMap<Integer, Integer> counter = new HashMap<>(size);
         HashMap<Integer, Integer> fri = new HashMap<>(size);
         HashMap<Integer, Integer> end = new HashMap<>(size);
         for (int i = 0; i < nums.length; i++) {
-            if(counter.containsKey(nums[i])){
+            if (counter.containsKey(nums[i])) {
                 int v = counter.get(nums[i]);
-                counter.put(nums[i],++v);
-                end.put(nums[i],i);
-            }else{
-                counter.put(nums[i],1);
-                fri.put(nums[i],i);
+                counter.put(nums[i], ++v);
+                end.put(nums[i], i);
+            } else {
+                counter.put(nums[i], 1);
+                fri.put(nums[i], i);
             }
         }
-        List<Map.Entry<Integer,Integer>> list = new ArrayList(counter.entrySet());
+        List<Map.Entry<Integer, Integer>> list = new ArrayList(counter.entrySet());
         Collections.sort(list, (o1, o2) -> (o2.getValue() - o1.getValue()));
         int maxSize = list.get(0).getValue();
         int result = nums.length;
-        if(end.keySet().size() == 0){
+        if (end.keySet().size() == 0) {
             return 1;
         }
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i).getValue() == maxSize && result > (end.get(list.get(i).getKey()) - fri.get(list.get(i).getKey()) + 1)){
-               result = end.get(list.get(i).getKey()) - fri.get(list.get(i).getKey()) + 1;
+            if (list.get(i).getValue() == maxSize && result > (end.get(list.get(i).getKey()) - fri.get(list.get(i).getKey()) + 1)) {
+                result = end.get(list.get(i).getKey()) - fri.get(list.get(i).getKey()) + 1;
             }
         }
 

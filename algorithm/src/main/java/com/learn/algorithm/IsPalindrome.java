@@ -9,21 +9,21 @@ public class IsPalindrome {
     public static boolean isPalindrome(int x) {
         int x1 = x;
         long result = 0l;
-        if(x<0){
+        if (x < 0) {
             return false;
         }
-        if(x<10){
+        if (x < 10) {
             return true;
         }
-        while (x!=0){
-            int num = x%10;
-            x = x/10;
-            result = result*10+num;
+        while (x != 0) {
+            int num = x % 10;
+            x = x / 10;
+            result = result * 10 + num;
         }
-        int compareNum = (int)result;
-        if(result<=Integer.MAX_VALUE  && compareNum == x1) {
+        int compareNum = (int) result;
+        if (result <= Integer.MAX_VALUE && compareNum == x1) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

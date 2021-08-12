@@ -10,10 +10,12 @@ public abstract class HouseBuilder {
 
     //将建造的流程写好
     public abstract void buildBasic();
+
     public abstract void buildWalls();
+
     public abstract void roofed();
 
-    public House buildHouse(){
+    public House buildHouse() {
         return house;
     }
 }

@@ -7,7 +7,7 @@
     <resultMap id="userMap" type="user">
         <result property="id" column="id"></result>
         <result property="username" column="username"></result>
-        
+
         <collection property="orderList" ofType="order">
             <result property="id" column="oid"></result>
             <result property="orderTime" column="orderTime"></result>
@@ -32,7 +32,7 @@
 
     <select id="findAllUserAndRole" resultMap="userRoleMap">
         select * from user u left join sys_user_role ur on u.id = ur.userid
-                             left join sys_role r on r.id = ur.roleid
+        left join sys_role r on r.id = ur.roleid
     </select>
 
 </mapper>

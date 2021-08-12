@@ -39,31 +39,31 @@ public class AccountsMerge {
         accounts.add(list4);
         accounts.add(list5);
 
-        List<List<String>> result =  accountsMerge(accounts);
+        List<List<String>> result = accountsMerge(accounts);
         System.out.println(result);
 
     }
 
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {
-        Map<String,Map> map = new HashMap<>();
+        Map<String, Map> map = new HashMap<>();
         for (int i = 0; i < accounts.size(); i++) {
-            Map<Integer,String> valueMap = new HashMap();
+            Map<Integer, String> valueMap = new HashMap();
             String value = accounts.get(i).get(0);
-            valueMap.put(i,value);
+            valueMap.put(i, value);
             boolean flag = true;
             for (int j = 1; j < accounts.get(i).size(); j++) {
-                if(map.containsKey(accounts.get(i).get(j))) {
-                    if(flag) {
+                if (map.containsKey(accounts.get(i).get(j))) {
+                    if (flag) {
                         valueMap = map.get(accounts.get(i).get(j));
                     }
                     flag = false;
-                    List keyList = getKey(map,map.get(accounts.get(i).get(j)));
-                    Map<Integer,String> value2Map = new HashMap();
-                    value2Map.put(i,value);
-                    List keyList2 = getKey(map,value2Map);
+                    List keyList = getKey(map, map.get(accounts.get(i).get(j)));
+                    Map<Integer, String> value2Map = new HashMap();
+                    value2Map.put(i, value);
+                    List keyList2 = getKey(map, value2Map);
                     keyList.addAll(keyList2);
                     for (int k = 0; k < keyList.size(); k++) {
-                        map.put(keyList.get(k).toString(),valueMap);
+                        map.put(keyList.get(k).toString(), valueMap);
                     }
                 }
                 map.put(accounts.get(i).get(j), valueMap);
@@ -76,8 +76,8 @@ public class AccountsMerge {
         for (int i = 0; i < valueList.size(); i++) {
             List<String> addList = new ArrayList<>();
             addList.add(valueList.get(i).values().iterator().next().toString());
-            for (int j = 0; j < getKey(map,valueList.get(i)).size(); j++) {
-                addList.add(getKey(map,valueList.get(i)).get(j));
+            for (int j = 0; j < getKey(map, valueList.get(i)).size(); j++) {
+                addList.add(getKey(map, valueList.get(i)).get(j));
             }
             Collections.sort(addList);
             resultList.add(addList);
@@ -86,10 +86,10 @@ public class AccountsMerge {
         return resultList;
     }
 
-    public static List<String> getKey(Map map, Object value){
+    public static List<String> getKey(Map map, Object value) {
         List<String> keyList = new ArrayList<>();
-        for(Object key: map.keySet()){
-            if(map.get(key).equals(value)){
+        for (Object key : map.keySet()) {
+            if (map.get(key).equals(value)) {
                 keyList.add(key.toString());
             }
         }
@@ -104,7 +104,7 @@ public class AccountsMerge {
                 break;
             }
         }
-        return  obj;
+        return obj;
     }
 
 

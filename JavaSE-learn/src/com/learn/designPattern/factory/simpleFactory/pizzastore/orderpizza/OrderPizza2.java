@@ -13,33 +13,34 @@ import java.io.InputStreamReader;
 public class OrderPizza2 {
     Pizza pizza = null;
     String orderType = "";
+
     //构造器
-    public OrderPizza2(){
+    public OrderPizza2() {
         do {
             orderType = getType();
             pizza = SimpleFactory.createPizza2(orderType);
 
-            if(pizza != null){
+            if (pizza != null) {
                 //输出Pizza的制作流程
                 pizza.prepare();
                 pizza.bake();
                 pizza.cut();
                 pizza.box();
-            }else {
+            } else {
                 System.out.println("订购失败");
                 break;
             }
-        }while (true);
+        } while (true);
     }
 
     //写一个方法，可以获取客户希望订购的pizza种类
-    private String getType(){
+    private String getType() {
         try {
             BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("input pizza type:");
             String str = strin.readLine();
             return str;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return "";
         }

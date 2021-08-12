@@ -8,7 +8,7 @@
         <result property="id" column="id"></result>
         <result property="orderTime" column="orderTime"></result>
         <result property="total" column="total"></result>
-        
+
         <association property="user" javaType="user">
             <result property="id" column="uid"></result>
             <result property="username" column="username"></result>

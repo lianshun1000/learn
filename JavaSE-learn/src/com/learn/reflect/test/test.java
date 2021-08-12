@@ -22,7 +22,7 @@ public class test {
         ServiceLoader<testforClass> tst = ServiceLoader.load(testforClass.class);
         System.out.println(tst);
         for (testforClass testforClass : tst) {
-          testforClass.test();
+            testforClass.test();
         }
 
     }

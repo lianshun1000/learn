@@ -24,6 +24,7 @@ public class CacheTest {
     private IUserMapper userMapper;
     private SqlSession sqlSession;
     private SqlSessionFactory sqlSessionFactory;
+
     @Before
     public void before() throws IOException {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
@@ -33,7 +34,7 @@ public class CacheTest {
     }
 
     @Test
-    public void firstLevelCache(){
+    public void firstLevelCache() {
         //第一次查询id为1的用户
         //首先去一级缓存中查询，有则返回，没有则查询数据库，同时将查询出来的结果放到一级缓存中
         User user1 = userMapper.findUserById(1);
@@ -60,7 +61,7 @@ public class CacheTest {
 
 
     @Test
-    public void secondLevelCache(){
+    public void secondLevelCache() {
         SqlSession sqlSession1 = sqlSessionFactory.openSession();
         SqlSession sqlSession2 = sqlSessionFactory.openSession();
         SqlSession sqlSession3 = sqlSessionFactory.openSession();
