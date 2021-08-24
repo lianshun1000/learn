@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/lagou-mp-springboot/lagou-mp-springboot.iml" filepath="$PROJECT_DIR$/lagou-mp-springboot/lagou-mp-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn.iml" filepath="$PROJECT_DIR$/.idea/learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvc/mvc.iml" filepath="$PROJECT_DIR$/mvc/mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_01_demo/springboot_01_demo.iml" filepath="$PROJECT_DIR$/springboot_01_demo/springboot_01_demo.iml" />
     </modules>
   </component>
 </project>

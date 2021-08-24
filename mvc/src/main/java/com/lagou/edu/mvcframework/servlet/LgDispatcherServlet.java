@@ -1,9 +1,6 @@
 package com.lagou.edu.mvcframework.servlet;
 
-import com.lagou.edu.mvcframework.annotations.LagouAutowired;
-import com.lagou.edu.mvcframework.annotations.LagouController;
-import com.lagou.edu.mvcframework.annotations.LagouRequestMapping;
-import com.lagou.edu.mvcframework.annotations.LagouService;
+import com.lagou.edu.mvcframework.annotations.*;
 import com.lagou.edu.mvcframework.pojo.Handler;
 import org.apache.commons.lang3.StringUtils;
 
@@ -22,6 +19,7 @@ import java.lang.reflect.Parameter;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * @author lianshun
@@ -38,6 +36,8 @@ public class LgDispatcherServlet extends HttpServlet {
 
     //private Map<String,Method> handlerMapping = new HashMap<>();
     private List<Handler> handlerMapping = new ArrayList<>();
+
+    private Map<String,Set<String>> securityMap=new HashMap<>();
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -76,6 +76,13 @@ public class LgDispatcherServlet extends HttpServlet {
                 baseUrl = annotation.value();
             }
 
+            Set<String> securitySet = new HashSet<>();
+            if(aClass.isAnnotationPresent(LagouSecurity.class)){
+                LagouSecurity lagouSecurity = aClass.getAnnotation(LagouSecurity.class);
+                securitySet = Arrays.stream(lagouSecurity.value()).collect(Collectors.toSet());
+            }
+
+
             //获取方法
             Method[] methods = aClass.getMethods();
             for (int i = 0; i < methods.length; i++) {
@@ -87,6 +94,14 @@ public class LgDispatcherServlet extends HttpServlet {
                 String methodUrl = annotation.value();
 
                 String url = baseUrl + methodUrl;
+
+
+                LagouSecurity security = method.getAnnotation(LagouSecurity.class);
+                if(security != null) {
+                    securitySet.addAll(Arrays.stream(security.value()).collect(Collectors.toSet()));
+                    securityMap.put(url, securitySet);
+                }
+
 
                 Handler handler = new Handler(entry.getValue(),method, Pattern.compile(url));
                 //计算方法的参数位置信息
@@ -241,6 +256,13 @@ public class LgDispatcherServlet extends HttpServlet {
         Handler handler = getHandler(req);
         if (handler == null){
             resp.getWriter().write("404 not found");
+            return;
+        }
+
+        String username = req.getParameter("username");
+        Set<String> usernames = securityMap.get(req.getRequestURI());
+        if(usernames!= null && usernames.contains(username)){
+            System.out.println("用户"+username+"禁止访问");
             return;
         }
 
