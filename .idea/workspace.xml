@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67d47366-9038-4dcf-bd52-db89947ee58a" name="Default Changelist" comment="SpringBoot" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1nsQDcFnmVXQlatyHO6JsVvH8EH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot_01_demo/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lagou.config" />
+      <recent name="com.lagou.sqlSession" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot_01_demo/src/main/resources" />
+      <recent name="$PROJECT_DIR$/springboot_01_demo" />
+      <recent name="$PROJECT_DIR$/springboot_01_demo/config" />
+      <recent name="$PROJECT_DIR$/springboot_01_demo/src/main/resources/config" />
+      <recent name="$PROJECT_DIR$/lagou-mp-springboot/src/main/java/com/lagou/pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mybatis_multitable/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mybatis_multitable/src/main/resources/com/lagou/mapper" />
+      <recent name="$PROJECT_DIR$/mybatis_multitable/src/main/resources/com.lagou.mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lagou" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.edu.mvcframework.annotations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Springboot01DemoApplicationTests.test1">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.lagoumpspringboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.lagoumpspringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.lagoumpspringboot.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.lagoumpspringboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.lagoumpspringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.lagoumpspringboot.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot01DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_01_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.springboot_01_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.springboot_01_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.springboot_01_demo.Springboot01DemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot01DemoApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_01_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.springboot_01_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.springboot_01_demo" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.springboot_01_demo.Springboot01DemoApplicationTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mvc [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/mvc" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-mp-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.LagouMpSpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot01DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_01_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.Springboot01DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testDeleteById" />
+      <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testInsert" />
+      <item itemvalue="JUnit.Springboot01DemoApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.Springboot01DemoApplicationTests.test1" />
+      <item itemvalue="Maven.mvc [tomcat7:run]" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.LagouMpSpringbootApplication" />
+      <item itemvalue="Spring Boot.Springboot01DemoApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Springboot01DemoApplicationTests.test1" />
+        <item itemvalue="JUnit.Springboot01DemoApplicationTests.contextLoads" />
+        <item itemvalue="Maven.mvc [tomcat7:run]" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testInsert" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testDeleteById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67d47366-9038-4dcf-bd52-db89947ee58a" name="Default Changelist" comment="" />
+      <created>1612176199835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612176199835</updated>
+      <workItem from="1612176201763" duration="1453000" />
+      <workItem from="1613545736359" duration="1465000" />
+      <workItem from="1615702044394" duration="10189000" />
+      <workItem from="1626853743736" duration="110000" />
+      <workItem from="1626853869583" duration="915000" />
+      <workItem from="1626854982730" duration="88000" />
+      <workItem from="1626855096299" duration="159000" />
+      <workItem from="1626855268006" duration="36000" />
+      <workItem from="1626870423593" duration="13051000" />
+      <workItem from="1626959754083" duration="34605000" />
+      <workItem from="1627370959262" duration="24000" />
+      <workItem from="1627482047872" duration="5853000" />
+      <workItem from="1627490523352" duration="143000" />
+      <workItem from="1627522397420" duration="1076000" />
+      <workItem from="1627565724447" duration="2794000" />
+      <workItem from="1627709388309" duration="165000" />
+      <workItem from="1628517529976" duration="5060000" />
+      <workItem from="1628604915332" duration="102000" />
+      <workItem from="1628693515009" duration="11457000" />
+      <workItem from="1628777393882" duration="100000" />
+      <workItem from="1629037516158" duration="3486000" />
+      <workItem from="1629210656027" duration="2161000" />
+      <workItem from="1629382235121" duration="172000" />
+      <workItem from="1629644293589" duration="3304000" />
+      <workItem from="1629649964815" duration="1662000" />
+      <workItem from="1629731697033" duration="153000" />
+      <workItem from="1629816910264" duration="200000" />
+      <workItem from="1630089569821" duration="97000" />
+      <workItem from="1630226622439" duration="234000" />
+    </task>
+    <task id="LOCAL-00001" summary="JUC">
+      <created>1615770854494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615770854494</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mybatis">
+      <created>1626854371609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626854371609</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JDBC自定义持久层框架">
+      <created>1626916472628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626916472628</updated>
+    </task>
+    <task id="LOCAL-00004" summary="JDBC自定义持久层框架">
+      <created>1626916607073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626916607073</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JDBC自定义持久层框架">
+      <created>1627296896514</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627296896514</updated>
+    </task>
+    <task id="LOCAL-00006" summary="JDBC自定义持久层框架作业完成">
+      <created>1627354973030</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627354973030</updated>
+    </task>
+    <task id="LOCAL-00007" summary="SpringMVC">
+      <created>1628731313716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628731313716</updated>
+    </task>
+    <task id="LOCAL-00008" summary="SpringBoot">
+      <created>1629767186923</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629767186923</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JUC" />
+    <MESSAGE value="mybatis" />
+    <MESSAGE value="JDBC自定义持久层框架" />
+    <MESSAGE value="JDBC自定义持久层框架作业完成" />
+    <MESSAGE value="SpringMVC" />
+    <MESSAGE value="SpringBoot" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
