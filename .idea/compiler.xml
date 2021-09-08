@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_01_demo" />
-        <module name="lagou-mp-springboot" />
         <module name="mvc" />
+        <module name="Minicat" />
+        <module name="lagou-mp-springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lagou-mp-springboot" target="1.8" />
+      <module name="Minicat" target="11" />
       <module name="mvc" target="11" />
       <module name="springboot_01_demo" target="11" />
     </bytecodeTargetLevel>
