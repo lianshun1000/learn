@@ -10,9 +10,11 @@
         <module name="mvc" />
         <module name="Minicat" />
         <module name="lagou-mp-springboot" />
+        <module name="algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="algorithm" target="8" />
       <module name="lagou-mp-springboot" target="1.8" />
       <module name="Minicat" target="11" />
       <module name="mvc" target="11" />
