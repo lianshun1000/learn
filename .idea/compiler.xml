@@ -18,7 +18,7 @@
       <module name="lagou-mp-springboot" target="1.8" />
       <module name="Minicat" target="11" />
       <module name="mvc" target="11" />
-      <module name="springboot_01_demo" target="11" />
+      <module name="springboot_01_demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
