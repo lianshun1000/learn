@@ -22,144 +22,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d47366-9038-4dcf-bd52-db89947ee58a" name="Default Changelist" comment="Tomcat">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/hard/FindMedianSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lagou_mp_springboot_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lagou_mp_springboot_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_drtrang_druid_spring_boot2_autoconfigure_1_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_drtrang_druid_spring_boot2_starter_1_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_50.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_50.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_50.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" />
+    <list default="true" id="67d47366-9038-4dcf-bd52-db89947ee58a" name="Default Changelist" comment="最长回文数">
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/middle/MaxArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/middle/MyAtoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/middle/ZTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/middle/LongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/middle/LongestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/AccountsMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/AccountsMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/AddBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/AddBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/ClimbStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/ClimbStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/ContainsNearbyAlmostDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/ContainsNearbyAlmostDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/ContainsNearbyDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/ContainsNearbyDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/DailyTemperatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/DeleteDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/DeleteDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/DeleteDuplicatesSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/DeleteDuplicatesSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/DuplicateZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/DuplicateZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/FindShortestSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/FindShortestSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/FourSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/FourSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/FourSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/FourSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/IsValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/IsValid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/KthGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/KthGrammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/LengthOfLastWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/LengthOfLastWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/LongestCommonPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/LongestZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/LongestZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/MaxSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/MaxSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/MySqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/MySqrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/PlusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/RemoveElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/RemoveElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/RomanToInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/RomanToInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/StrStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/StrStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/ThreeSumClosest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/learn/algorithm/old/TwoSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +94,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="JupyterTrust" id="430c3a4f-1e68-4d5b-848d-223732f45743" />
+  <component name="JupyterTrust" id="8025cb3c-7370-48b1-a598-dabb51566098" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -268,33 +168,7 @@
       <recent name="com.lagou.edu.mvcframework.annotations" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestPalindrome">
-    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.Bootstrap" />
-      <module name="Minicat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.cpp.Demo" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learn.cpp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MaxArea">
     <configuration name="FindMedianSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learn.algorithm.hard.FindMedianSortedArrays" />
       <module name="algorithm" />
@@ -321,29 +195,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="MaxArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.algorithm.middle.MaxArea" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.algorithm.middle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyAtoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.algorithm.middle.MyAtoi" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.algorithm.middle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.algorithm.middle.ZTransformation" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.algorithm.middle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot01DemoApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot_01_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lagou.springboot_01_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lagou.springboot_01_demo" />
-      <option name="MAIN_CLASS_NAME" value="com.lagou.springboot_01_demo.Springboot01DemoApplicationTests" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -370,22 +269,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Bootstrap" />
-      <item itemvalue="Application.Demo" />
       <item itemvalue="Application.FindMedianSortedArrays" />
-      <item itemvalue="JUnit.Springboot01DemoApplicationTests.test1" />
+      <item itemvalue="Application.LongestPalindrome" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.LagouMpSpringbootApplication" />
       <item itemvalue="Spring Boot.Springboot01DemoApplication" />
-      <item itemvalue="Application.LongestPalindrome" />
+      <item itemvalue="Application.ZTransformation" />
+      <item itemvalue="Application.MyAtoi" />
+      <item itemvalue="Application.MaxArea" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxArea" />
+        <item itemvalue="Application.MyAtoi" />
+        <item itemvalue="Application.ZTransformation" />
         <item itemvalue="Application.LongestPalindrome" />
         <item itemvalue="Application.FindMedianSortedArrays" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.Bootstrap" />
-        <item itemvalue="JUnit.Springboot01DemoApplicationTests.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +333,8 @@
       <workItem from="1632836089035" duration="449000" />
       <workItem from="1632898107073" duration="67000" />
       <workItem from="1645947972169" duration="5115000" />
-      <workItem from="1647159566445" duration="4366000" />
+      <workItem from="1647159566445" duration="4808000" />
+      <workItem from="1651394720838" duration="7116000" />
     </task>
     <task id="LOCAL-00001" summary="JUC">
       <created>1615770854494</created>
@@ -506,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631122921979</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最长回文数">
+      <created>1647164228524</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647164228524</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,57 +440,87 @@
     <MESSAGE value="SpringMVC" />
     <MESSAGE value="SpringBoot" />
     <MESSAGE value="Tomcat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tomcat" />
+    <MESSAGE value="最长回文数" />
+    <option name="LAST_COMMIT_MESSAGE" value="最长回文数" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2508" height="364" key="GridCell.Tab.0.bottom" timestamp="1647163898251">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="1388" height="190" key="GridCell.Tab.0.bottom" timestamp="1651712281327">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.0.bottom/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953062748" />
     <state width="2508" height="389" key="GridCell.Tab.0.bottom/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952706163" />
+    <state width="1388" height="190" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1651712281327" />
+    <state width="1388" height="191" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1651397875378" />
     <state width="2508" height="364" key="GridCell.Tab.0.bottom/0.25.2560.1330@0.25.2560.1330" timestamp="1647163898251" />
-    <state width="2508" height="364" key="GridCell.Tab.0.center" timestamp="1647163898250">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.0.bottom/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734271" />
+    <state width="1388" height="190" key="GridCell.Tab.0.center" timestamp="1651712281326">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.0.center/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953062745" />
     <state width="2508" height="389" key="GridCell.Tab.0.center/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952706162" />
+    <state width="1388" height="190" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1651712281326" />
+    <state width="1388" height="191" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1651397875376" />
     <state width="2508" height="364" key="GridCell.Tab.0.center/0.25.2560.1330@0.25.2560.1330" timestamp="1647163898250" />
-    <state width="2508" height="364" key="GridCell.Tab.0.left" timestamp="1647163898249">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.0.center/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734271" />
+    <state width="1388" height="190" key="GridCell.Tab.0.left" timestamp="1651712281325">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.0.left/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953062744" />
     <state width="2508" height="389" key="GridCell.Tab.0.left/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952706161" />
+    <state width="1388" height="190" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1651712281325" />
+    <state width="1388" height="191" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1651397875376" />
     <state width="2508" height="364" key="GridCell.Tab.0.left/0.25.2560.1330@0.25.2560.1330" timestamp="1647163898249" />
-    <state width="2508" height="364" key="GridCell.Tab.0.right" timestamp="1647163898250">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.0.left/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734271" />
+    <state width="1388" height="190" key="GridCell.Tab.0.right" timestamp="1651712281326">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.0.right/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953062747" />
     <state width="2508" height="389" key="GridCell.Tab.0.right/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952706163" />
+    <state width="1388" height="190" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1651712281326" />
+    <state width="1388" height="191" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1651397875377" />
     <state width="2508" height="364" key="GridCell.Tab.0.right/0.25.2560.1330@0.25.2560.1330" timestamp="1647163898250" />
-    <state width="2508" height="360" key="GridCell.Tab.1.bottom" timestamp="1647163887273">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.0.right/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734271" />
+    <state width="1388" height="190" key="GridCell.Tab.1.bottom" timestamp="1651712281330">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.1.bottom/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953060004" />
     <state width="2508" height="479" key="GridCell.Tab.1.bottom/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952674179" />
+    <state width="1388" height="190" key="GridCell.Tab.1.bottom/0.25.1440.813@0.25.1440.813" timestamp="1651712281330" />
+    <state width="1388" height="191" key="GridCell.Tab.1.bottom/0.25.1440.814@0.25.1440.814" timestamp="1651397875270" />
     <state width="2508" height="360" key="GridCell.Tab.1.bottom/0.25.2560.1330@0.25.2560.1330" timestamp="1647163887273" />
-    <state width="2508" height="360" key="GridCell.Tab.1.center" timestamp="1647163887273">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.1.bottom/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734272" />
+    <state width="1388" height="190" key="GridCell.Tab.1.center" timestamp="1651712281328">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.1.center/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953060002" />
     <state width="2508" height="479" key="GridCell.Tab.1.center/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952674177" />
+    <state width="1388" height="190" key="GridCell.Tab.1.center/0.25.1440.813@0.25.1440.813" timestamp="1651712281328" />
+    <state width="1388" height="191" key="GridCell.Tab.1.center/0.25.1440.814@0.25.1440.814" timestamp="1651397875269" />
     <state width="2508" height="360" key="GridCell.Tab.1.center/0.25.2560.1330@0.25.2560.1330" timestamp="1647163887273" />
-    <state width="2508" height="360" key="GridCell.Tab.1.left" timestamp="1647163887273">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.1.center/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734272" />
+    <state width="1388" height="190" key="GridCell.Tab.1.left" timestamp="1651712281328">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.1.left/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953060001" />
     <state width="2508" height="479" key="GridCell.Tab.1.left/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952674177" />
+    <state width="1388" height="190" key="GridCell.Tab.1.left/0.25.1440.813@0.25.1440.813" timestamp="1651712281328" />
+    <state width="1388" height="191" key="GridCell.Tab.1.left/0.25.1440.814@0.25.1440.814" timestamp="1651397875269" />
     <state width="2508" height="360" key="GridCell.Tab.1.left/0.25.2560.1330@0.25.2560.1330" timestamp="1647163887273" />
-    <state width="2508" height="360" key="GridCell.Tab.1.right" timestamp="1647163887273">
-      <screen x="0" y="25" width="2560" height="1330" />
+    <state width="2508" height="360" key="GridCell.Tab.1.left/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734272" />
+    <state width="1388" height="190" key="GridCell.Tab.1.right" timestamp="1651712281329">
+      <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="2508" height="479" key="GridCell.Tab.1.right/0.25.1440.809/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645953060004" />
     <state width="2508" height="479" key="GridCell.Tab.1.right/0.25.1440.813/1440.25.2560.1415@1440.25.2560.1415" timestamp="1645952674178" />
+    <state width="1388" height="190" key="GridCell.Tab.1.right/0.25.1440.813@0.25.1440.813" timestamp="1651712281329" />
+    <state width="1388" height="191" key="GridCell.Tab.1.right/0.25.1440.814@0.25.1440.814" timestamp="1651397875270" />
     <state width="2508" height="360" key="GridCell.Tab.1.right/0.25.2560.1330@0.25.2560.1330" timestamp="1647163887273" />
+    <state width="2508" height="360" key="GridCell.Tab.1.right/1440.25.1920.977/0.25.1440.875@0.25.1440.875" timestamp="1647222734272" />
+    <state x="439" y="187" key="Vcs.Push.Dialog.v2" timestamp="1651394776304">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="439" y="187" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1651394776304" />
+    <state x="780" y="364" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1647164371366" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

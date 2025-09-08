@@ -9,63 +9,58 @@ package com.learn.algorithm.hard;
  */
 public class FindMedianSortedArrays {
     public static void main(String[] args) {
-        int[] nums1 = {3};
-        int[] nums2 = {-2,-1};
+        int[] nums1 = {};
+        int[] nums2 = {2};
         System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-
-        int[] arr1;
-        int[] arr2;
-        if(nums1.length == 0){
-            nums1 = nums2;
-        }
         if(nums2.length == 0){
-            nums2 = nums1;
+            if(nums1.length%2 == 0){
+                return (nums1[nums1.length/2] + nums1[nums1.length/2 - 1])/2.0d;
+            }
+            return nums1[nums1.length/2];
         }
-        if(nums1.length == 1 && nums2.length ==1){
-            return (nums1[0]+nums2[0])/2.0;
+        if(nums1.length == 0){
+            if(nums2.length%2 == 0){
+                return (nums2[nums2.length/2] + nums2[nums2.length/2 - 1])/2.0d;
+            }
+            return nums2[nums2.length/2];
         }
-        if(nums1.length>=nums2.length){
-            arr1 = nums1;
-            arr2 = nums2;
-        }else{
-            arr1 = nums2;
-            arr2 = nums1;
+        if(nums1.length == 1 && nums2.length == 1){
+            return (nums1[0] + nums2[0])/2.0d;
         }
-        int m = arr1.length;
-        int n = arr2.length;
-        int k;
-        if ((m + n) % 2 == 0) {
-            k = (m + n) / 2;
-        } else {
-            k = (m + n - 1) / 2;
-        }
-
+        int size = nums1.length + nums2.length;
+        int count = 0;
+        int flag = size / 2;
         int i = 0;
         int j = 0;
-        int flag = 0;
-        double result = 0.;
-        while (i + j <= k) {
-            if ((i < m && arr1[i] <= arr2[j])||(j>=n)) {
-                if ((m + n) % 2 == 0) {
-                    result = (arr1[i] + flag) / 2.0;
-                } else {
-                    result = arr1[i];
-                }
-                flag = arr1[i];
-                i++;
-            } else {
-                if ((m + n) % 2 == 0) {
-                    result = (arr2[j] + flag) / 2.0;
-                } else {
-                    result = arr2[j];
-                }
-                flag = arr2[j];
-                j++;
+        int pre = 0;
+        int current = 0;
+        while (count <= flag) {
+            pre = current;
+            if(i>=nums1.length){
+                current = nums2[j++];
+            }else if(j >= nums2.length){
+                current = nums1[i++];
             }
+            else if(i<nums1.length && j< nums2.length && nums1[i] == nums2[j]){
+                if(i<j){
+                    current = nums1[i++];
+                }else{
+                    current = nums2[j++];
+                }
+            }else if(i < nums1.length && nums1[i] < nums2[j]){
+                current = nums1[i++];
+            }else if(j < nums2.length && nums2[j] < nums1[i]){
+                current = nums2[j++];
+            }
+            count++;
         }
-        return result;
+
+        if(size%2 == 0){
+            return (pre + current)/2.0d;
+        }
+        return current;
     }
 }

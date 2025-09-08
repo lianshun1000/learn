@@ -11,33 +11,21 @@ import reactor.core.publisher.Flux;
 
 /**
  * @author lianshun
- * 2025/9/2 20:34
+ * 2025/9/7 下午4:15
  */
 @RestController
 @RequestMapping("/ai")
 @RequiredArgsConstructor
-public class ChatController {
+public class GameController {
 
-    private final ChatClient chatClient;
-    private final ChatHistoryRepository chatHistoryRepository;
+    private final ChatClient gameChatClient;
 
-    @RequestMapping(value = "/chat", produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "/game", produces = "text/html;charset=utf-8")
     public Flux<String> chat(@RequestParam String prompt, String chatId) {
-        //保存会话ID
-        chatHistoryRepository.save("chat", chatId);
         //请求模型
-        return chatClient.prompt()
+        return gameChatClient.prompt()
                 .user(prompt)
                 .advisors(advisorSpec -> advisorSpec.param(ChatMemory.CONVERSATION_ID, chatId))
-                .stream()
-                .content();
-
-    }
-
-    @RequestMapping(value = "/chat2")
-    public Flux<String> chat2(@RequestParam String prompt) {
-        return chatClient.prompt()
-                .user(prompt)
                 .stream()
                 .content();
 
